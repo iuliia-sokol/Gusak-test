@@ -1,0 +1,277 @@
+/* Весь документ */
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Головна сторінка */
+.main-page {
+    height: 100%;
+    background: linear-gradient(90deg, #FCFEFF 0%, #B9E6FF 100%);
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/* Хедер з логотипом */
+header {
+    margin-top: 32px;
+    margin-bottom: 56px;
+    display: flex;  
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo-text {
+    margin-left: 16px;
+}
+.container-image-display {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+/* Текст головної сторінки */
+.gus-container {
+    background-color: #FFF;
+    padding: 60px 56px;
+    align-self: center;
+    margin-top: 40px;
+}
+.gus-container-title {
+    color: #020109;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 24px;
+}
+.gus-container-greeting {
+    color: #020109;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.gus-container-lets-start {
+    color: #FF6B0A;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 48px;
+}
+.gus-container-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #020109;
+    margin-bottom: 48px;
+}
+/* Кнопка */
+.gus-launch {
+    margin-bottom: 42 px;
+    padding: 12px 24px;
+    background: #FF6B0A;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+/* Фото гуся */
+.gus-image {
+ align-self: flex-end;  
+}
+
+/* Факти про гуся  */
+.gus-facts {
+    padding: 44px 56px 72px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Заголовок і шапка */
+.gus-facts-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100px;
+    color: #020109;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.gus-facts-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;    
+    text-align: center;
+    color: #020109;
+    width: 875px;
+}
+/* Блоки з фактами */
+.gus-facts-container {
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gus-facts-item {
+    width: 33%;
+    margin-top: 24px;
+    margin-left: 32px;
+}
+.gus-facts-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #020109;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    padding-left: 56px;
+}
+.gus-facts-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #020109; 
+    width: 280px; 
+    margin-top: 32px;
+    padding-left: 56px;
+}
+/* Футер */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.footer-background {
+    width: 1170px;
+    background: linear-gradient(90deg, #FFFFFF 0%, #D7EFFC 100%);
+    padding: 72px 0;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100px;
+    color: #020109;
+    margin: 16px 0;
+}
+.footer-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #020109;
+    width: 875px;
+}
+/* Модальне вікно*/
+.modal-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(2 1 9 / 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+}
+.modal-form-container {
+    background: #FFFFFF;
+    padding: 32px 92px 60px 92px;
+    position: relative;
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.modal-form-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #020109;
+    margin: 32px 0 12px 0;
+}
+.modal-form-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #020109;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.modal-form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.modal-field-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #020109;
+    margin-bottom: 8px;
+}
+.modal-field-input {
+    border: 1px solid #005BBB;
+    border-radius: 8px; 
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #020109;
+    padding: 4px 8px;
+    }
+.modal-form-button {
+    margin-bottom: 42 px;
+    padding: 12px 24px;
+    background: #FF6B0A;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 24px;
+}
+.close-button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    font-size: 20px;
+    color: #1B1D1F;;
+    background: none;
+    cursor: pointer;
+    border: 0;
+}
+.gus-success {
+    width: 334;
+    height: 321px;   
+}
+.modal-form-description_2 {
+    margin-bottom: 0;
+}
+.modal-active {
+    opacity: 1;
+    pointer-events: all;
+}
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
